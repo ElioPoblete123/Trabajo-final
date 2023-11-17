@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Compras de Libros</title>
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+    <form id="login-form">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+
+    <div id="compras" style="display: none;">
+        <h2>Compras de Libros</h2>
+        <ul id="compras-list"></ul>
+        <h3>Agregar Compra</h3>
+        <form id="agregar-compra-form">
+            <label for="fecha">Fecha del Pedido (yyyy-MM-dd):</label>
+            <input type="text" id="fecha" name="fecha" required><br>
+            <label for="direccion">Dirección del Pedido:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+            <label for="estado">Estado del Pedido:</label>
+            <input type="text" id="estado" name="estado" required><br>
+            <input type="submit" value="Agregar Compra">
+        </form>
+    </div>
+
+    <button id="logout-button" style="display: none;">Cerrar Sesión</button>
+    <script src="iniciosesion.js"></script>
+</body>
+</html>

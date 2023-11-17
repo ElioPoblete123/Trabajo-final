@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Venta de Libros</title>
+    <link rel="stylesheet" type="text/css" href="Formulario.css">
+</head>
+<body>
+<header>
+    <img src="./LIBRERIA-ELIO.png" alt="nose" height="100" width="300">
+    <a class="nose5" href="#loginPopup">Opciones</a>
+</header>
+
+
+    <!-- Ventana emergente de inicio de sesión -->
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <h2>Opciones</h2><br>
+            <!-- Aquí puedes agregar un formulario de inicio de sesión -->
+            <form>
+                <a class="btn btn-primary mb-2" href="#"></a><br>
+                <!-- Campos de usuario y contraseña -->
+                <a class="btn btn-primary mb-2" href="#"></a><br>
+                <!-- Botón para enviar el formulario -->
+                <a class="btn btn-primary mb-2" href="#"></a><br>
+            </form>
+            <a href="#" class="btn btn-danger closeButton">Cerrar</a><!-- Botón para cerrar la ventana emergente -->
+
+        </div>
+    </div>
+<div class="nose">
+    <h1>Libros</h1>
+    <br>
+    <form action="Formulario.php" method="post">
+        <input type="text" id="Nombres_Clientes" name="Nombres_Clientes" placeholder="Nombre" required>
+        <br>
+        <input type="text" id="Apellido_Clientes" name="Apellido_Clientes" placeholder="Apellido" required>
+        <br>
+        <input type="text" id="Documento_Clientes" name="Documento_Clientes" placeholder="Numero de documento" required>
+        <br>
+        <input type="text" id="Mail_Clientes" name="Mail_Clientes" placeholder="Mail" required>
+        <br>
+        <input type="tel" id="Telefono_Clientes" name="Telefono_Clientes" placeholder="Numero de telefono" required>
+        <br>
+        <input type="text" id="Direccion_Clientes" name="Direccion_Clientes" placeholder="Direccion" required>
+        <br>
+        <input type="date" id="FecNac_Clientes" name="FecNac_Clientes" placeholder="Fecha de nacimiento" required>
+        <br>
+        <input type="number" id="Cantidad_Libros" name="Cantidad_Libros" min="1" placeholder="Cantidad" required>
+        <div class="book-container">
+            <div class="book">
+                <img src="C:\Users\Usuario 89\Downloads\descarga.png" alt="Libro Girando">
+            </div>
+        </div>
+        <br>
+        <input type="submit" value="Enviar Pedido">
+        <a href="historial.html"><input type="button" value="Historial"></a>
+    </form>
+</div>
+<script src="scriptFormulario.js"></script>
+</body>
+</html>

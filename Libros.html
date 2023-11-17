@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Venta de Libros</title>
+    <link rel="stylesheet" type="text/css" href="Libros.css">
+</head>
+<body>
+<header>
+    <img src="./LIBRERIA-ELIO.png" alt="nose" height="128" width="343">
+</header>
+<br><br><br><br>
+<div class="nose">
+    <h1>Cargar Libros</h1>
+    <br>
+    <form action="Libros.php" method="post" enctype="multipart/form-data">
+        <br>
+        <input type="text" id="Titulo_Libro" name="Titulo_Libro" placeholder="Titulo del Libro" required>
+        <input type="text" id="Autor_Libro" name="Autor_Libro" placeholder="Autor del Libro" required>
+        <input type="text" id="Editorial_Libro" name="Editorial_Libro" placeholder="Editorial del Libro" required>
+        <input type="date" id="AñoPublicacion_Libro" name="AñoPublicacion_Libro" placeholder="Fecha de su publicacion" required>
+        <input type="number" id="Stock_Libro" name="Stock_Libro" placeholder="Stock disponible" required>
+        <input type="text" id="ISBN_Libro" name="ISBN_Libro" placeholder="ISBN del Libro" required>
+        <input type="text" id="Categoria_Libro" name="Categoria_Libro" placeholder="Categoria del libro" required>
+        <br>
+        <!-- Agrega un campo de carga de archivos -->
+        <input type="file" id="Imagen_Libro" name="Imagen_Libro" accept="image/*" required>
+        
+        <br>
+        <div class="book-container">
+            <img src="#" alt="Descripcion de la imagen" id="previewImagen" style="max-width: 300px;">
+            <div class="book"></div>
+        </div>
+        <br>
+        <input type="submit" value="Cargar Libro">
+    </form>
+</div>
+<script src="Libros.js"></script>
+</body>
+</html>

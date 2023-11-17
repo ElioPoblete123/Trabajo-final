@@ -1,0 +1,186 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #030202;
+    /* Agregar la imagen de fondo */
+    background-image:url('https://i.blogs.es/603a33/layer-14/1366_2000.jpeg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajustar tamaño de la imagen para cubrir el cuerpo */
+    background-position: center; /* Centrar la imagen en el cuerpo */
+}
+
+#mostrarFormularioInterno {
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+    padding: 10px 20px;
+    background-color: #3f2a1b8e;
+    color: #ed7d32;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: top;
+    padding: 2px;
+    top: 0;
+    width: 99%;
+    box-shadow: 0;
+    background-color: rgba(75, 70, 70, 0.096);
+    
+}
+
+.nose5{
+    padding: 40px;
+    text-decoration:underline;
+    font-size: 24px;
+    color: gold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+
+button{
+    padding: 20px;
+    color: #ed7d32;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.popup {
+    align-items: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Agregado un fondo semitransparente para resaltar la ventana emergente */
+}
+.popup-content {
+    background-color: #faf9f92f;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    text-align: center;
+    font-size: 24px;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-height: 80%; /* Limita la altura máxima de la ventana emergente */
+    overflow-y: auto; /* Agrega una barra de desplazamiento si el contenido es demasiado grande */
+    position: relative; /* Agregado para ajustar el botón de cierre */
+}
+
+/* Estilos para el botón de cierre */
+.closeButton {
+    
+    text-decoration: none;
+    position: absolute; /* Alinea el botón de cierre en la esquina superior derecha */
+    top: 10px;
+    right: 10px;
+}
+/* Estilos para el enlace de inicio de sesión cuando se activa */
+.popup:target {
+    display: flex;
+}
+
+h1 {
+    padding: 40px;
+    text-align: center;
+text-decoration:underline;
+color: gold;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    padding: 40px;
+    text-align: center;
+text-decoration:underline;
+color: gold;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nose{
+    box-shadow: -4px -1px 65px -12px rgba(0,0,0,1);
+-webkit-box-shadow: -4px -1px 65px -12px rgba(0,0,0,1);
+-moz-box-shadow: -4px -1px 65px -12px rgba(0,0,0,1);
+    background-color:#35423860;
+    margin-left: 160px;
+    margin-right: 160px;
+text-align: center;
+border-radius: 20px;
+}
+input, textarea, select {
+    
+    width: 400px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #3f2a1b;
+    border-radius: 5px;
+    color: #000;
+}
+
+select {
+    height: 35px;
+}
+
+input[type="submit"] {
+    background-color: #3f2a1b8e;
+    color:#ed7d32;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    transition: 3px
+    ;
+    background-color: #ed7d32;
+    border: 2px solid #3f2a1b8e;
+}
+input[type="button"]{
+    background-color: #3f2a1b8e;
+    color: #ed7d32;
+}
+input[type="button"]:hover {
+    transition: 3px;
+    background-color: #ed7d32;
+    border: 2px solid #3f2a1b8e;
+}
+h3 {
+    padding: 40px;
+    text-align: center;
+text-decoration:underline;
+}
+
+.book-container {
+    text-align: center;
+}
+
+.book {
+    width: 100px;
+    height: 150px;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.book.hidden {
+    display: none;
+}
+
+.book:hover {
+    transform: rotate(360deg);
+}

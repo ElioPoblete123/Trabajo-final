@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Venta de Libros</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header>
+        <img src="./LIBRERIA-ELIO.png" alt="nose" height="100" width="300">
+        <a class="nose5" href="#loginPopup">Opciones</a>
+    </header>
+    <br><br><br><br>
+
+    <!-- Ventana emergente de inicio de sesión -->
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <h2>Opciones</h2><br>
+            <button id="mostrarFormularioInterno">Formulario</button>
+
+            <!-- Botón para cerrar la ventana emergente -->
+            <a href="#" class="btn btn-danger closeButton">Cerrar</a>
+        </div>
+    </div>
+
+    <div class="nose">
+        <h1>Libros</h1>
+        <br>
+        <div class="image-container">
+            <div class="image-item">
+                <img src="https://sbslibreria.vteximg.com.br/arquivos/ids/210446-1000-1000/9789878000107.jpg" alt="Imagen 1" width="200" height="200">
+                <p>  Harry potter y la piedra filosofal, es un libro en el que...</p>
+                <button class="read-more">Leer más</button>
+                <p class="full-text" style="display: none;">
+                    Se narran los primeros pasos de Harry en el mundo de la magia, así como su primer enfrentamiento con Voldemort, quien en su búsqueda de la inmortalidad quiere obtener el poder de la piedra filosofal y posee al profesor de defensa contra las artes oscuras.
+                    <button class="read-less">Leer menos</button>
+                </p>
+            </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
